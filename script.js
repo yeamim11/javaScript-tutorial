@@ -21,8 +21,38 @@ hello("abubolor ");
 let firstName = "abubolor Siddik";
 let number = 111111111;
 
-firstName = "abubolor Siddik Yeamim"; // this will work because let variable can be reassigned
+firstName = "abubolor Siddik"; // this will work because let variable can be reassigned
 number = 200; // this will not work because const variable cannot be reassigned
 console.log(number + 123456789); // this will work because number is a let variable and can be reassigned
-console.log(firstName);
+console.log(`${firstName} yeamim `); // this will work because firstName is a let variable and can be reassigned
 
+let x = 'yeamimi'; // this will work because x is a let variable and can be reassigned
+console.log(`${x} is a frontend developer`); // this will work because x is a let variable and can be reassigned
+
+// ==================================
+
+const person = {
+    firstName : "yeamim",
+    age : 20,
+}
+person.country = "Bangladesh";
+person.data = "yeamim is a frontend developer";
+console.log(person)
+
+
+
+// ================= arithmemtic opperator =============== 
+
+let a = 10;
+let b = 20;
+let c = a + b; // addition
+console.log(c)
+
+let userInput = prompt("Enter a number: ");
+let number1= parseInt(userInput); // convert string to number
+
+if (number1 % 2 === 0) {
+    console.log(`${number1} is even.`);
+}else {
+    console.log(`${number1} is odd.`);
+}
