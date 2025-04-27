@@ -41,18 +41,3 @@ console.log(person)
 
 
 
-// ================= arithmemtic opperator =============== 
-
-let a = 10;
-let b = 20;
-let c = a + b; // addition
-console.log(c)
-
-let userInput = prompt("Enter a number: ");
-let number1= parseInt(userInput); // convert string to number
-
-if (number1 % 2 === 0) {
-    console.log(`${number1} is even.`);
-}else {
-    console.log(`${number1} is odd.`);
-}
