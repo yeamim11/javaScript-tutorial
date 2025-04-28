@@ -11,14 +11,14 @@ let b = 20;
 let c = a + b; // addition
 console.log(c)
 
-// let userInput = prompt("Enter a number: ");
-// let number1= parseInt(userInput); // convert string to number
+let userInput = prompt("Enter a number: ");
+let number1= parseInt(userInput); // convert string to number
 
-// if (number1 % 2 === 0) {
-//     console.log(`${number1} is even.`);
-// }else {
-//     console.log(`${number1} is odd.`);
-// }
+if (number1 % 2 === 0) {
+    console.log(`${number1} is even.`);
+}else {
+    console.log(`${number1} is odd.`);
+}
 
 
 // ================ comparison opperator ===============
@@ -76,3 +76,9 @@ console.log(result); // output the result of the ternary operator
 
 let result1 = (p < u) ? "p is less than u" : "u is less than p";
 console.log(result1); // output the result of the ternary operator
+
+if (p > u) {
+    console.log('true');
+}else {
+    console.log('false');
+}
