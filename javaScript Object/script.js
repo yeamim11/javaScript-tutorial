@@ -25,4 +25,38 @@ console.log(mobile["5G"]); // Output: true
 console.log(mobile[a]); // Output: Symbol value
 
 
+
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+
+const objFinal = { ...target, ...source };
+console.log(objFinal);
+
+console.log(target);
+// Expected output: Object { a: 1, b: 4, c: 5 }
+
+console.log(returnedTarget === target);
+// Expected output: true
+
+
 // *.......................object comstuctors
+
+function Mobile(name, brand, price, color, storage, camera, battery, screenSize, releaseDate) {
+    this.name = name;
+    this.brand = brand;
+    this.price = price;
+    this.color = color;
+    this.storage = storage;
+    this.camera = camera;
+    this.battery = battery;
+    this.screenSize = screenSize;
+    this.releaseDate = releaseDate;
+}
+
+const mobile1 = new Mobile("iPhone 14", "Apple", 99999, "black", "128GB", "12MP", "3279mAh", "6.1 inches", "2022-09-16");
+const mobile2 = new Mobile("Galaxy S21", "Samsung", 79999, "white", "256GB", "64MP", "4000mAh", "6.2 inches", "2021-01-14");
+
+console.log(mobile1); // Output: iPhone 14
+console.log(mobile2); // Output: Galaxy S21
