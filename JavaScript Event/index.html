@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load()" onresize="resize()">
+    <h1 id="titel" >JavaScript Event</h1>
+    <button id="btn" onclick="sub()" >Subscribe</button>
+    <br>
+    <button id="btn2" onclick="heart()">
+        <i class="fa-regular fa-heart" id="icon"></i>
+    </button>
+    <h2 id="text"></h2>
+
+    
+
+    <form action="" id="form" onkeyup="key()" onkeypress="key()" > 
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter Your Name">
+        <label for="">Email</label>
+        <input type="email" placeholder="Enter Your Email">
+        <label for="">Message</label>
+        <textarea id="textarea" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="Send Message">
+      </form>
+      
+
+
+    <!-- ===================== -->
+     <script src="script.js"></script>
+</body>
+</html>
